@@ -1,0 +1,26 @@
+<div class="container ">
+  <h1 class="big2 text-center">Tâches répétitives et tâches retardées</h1>
+  <textarea class="myCode">
+<div class="text-center" onclick="stop()">
+    <svg id="horloge"
+            width="200" height="200" 
+            viewBox="-100 -100 200 200">
+        <line y2="-90" />
+        <circle r="10" />
+    </svg>
+</div>
+<script>
+    let angle = 0;
+    const aig = document.querySelector("#horloge line");
+    const tid = setInterval(function() {
+    angle = angle < 360 ? angle + 6 : 0;
+    const val = "rotate(" + angle + ")";
+    aig.setAttribute("transform", val);
+    console.log("tick ", angle);
+    }, 1000);
+    function stop(){
+        clearInterval(tid)
+    }
+</script>
+  </textarea>
+</div>

@@ -1,0 +1,14 @@
+#horloge {
+  border: 6px double #080;
+  border-radius: 50%;
+}
+#horloge line {
+  stroke-width: 3;
+  stroke: green;
+}
+#horloge circle {
+  fill: green;
+}
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+#horloge {
+  border: 6px double #080;
+  border-radius: 50%;
+}
+#horloge line {
+  stroke-width: 3;
+  stroke: green;
+}
+#horloge circle {
+  fill: green;
+}
+.text-center {
+  text-align: center;
+}
+p {
+  padding: 20px;
+  border: 1px solid gray;
+  margin: 60px;
+  transition: 300ms;
+}
+p:hover {
+  transform: scale(1.2);
+  background: black;
+  color: white;
+  transition: 300ms;
+}
